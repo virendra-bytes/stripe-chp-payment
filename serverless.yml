@@ -15,9 +15,15 @@ custom:
 provider:
   name: aws
   runtime: nodejs18.x
-  stage: dev
+  stage: stage
   # profile: personal
   # region: ap-southeast-1
+  # Duration for CloudWatch log retention (default: forever)
+  # logRetentionInDays: 14
+  # Default memory size for functions (default: 1024MB)
+  memorySize: 128
+  # Note: API Gateway has a maximum timeout of 30 seconds
+  timeout: 10
   environment:
     STRIPE_SECRET_KEY: ${self:custom.secrets.stripeSecretKey} # Stripe secret API key
 
