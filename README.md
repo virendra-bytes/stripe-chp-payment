@@ -2,10 +2,6 @@
 The backend for a serverless stripe application.
 Built with AWS Lambda and the Serverless Framework.
 
-[Demo](https://serverless-stripe-frontend-xlknvwjjlv.now.sh)
-
-[Blog Post](https://yos.io/2017/06/22/serverless-stripe/)
-
 ## Setup
 
 ### Prerequisites
